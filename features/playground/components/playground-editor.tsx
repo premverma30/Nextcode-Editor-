@@ -512,8 +512,9 @@ export const PlaygroundEditor = ({
         inlineCompletionProviderRef.current = null
       }
       if (tabCommandRef.current) {
-        tabCommandRef.current.dispose()
-        tabCommandRef.current = null
+        tabCommandRef.current = null  // tabCommandRef.current.dispose()
+
+        //tabCommandRef.current = null
       }
     }
   }, [])
