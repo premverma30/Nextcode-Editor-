@@ -4,7 +4,6 @@ import { db } from "@/lib/db"
 import { TemplateFolder } from "../libs/path-to-json";
 import { revalidatePath } from "next/cache";
 
-
 // Toggle marked status for a problem
 export const toggleStarMarked = async (playgroundId: string, isChecked: boolean) => {
     const user = await currentUser();
